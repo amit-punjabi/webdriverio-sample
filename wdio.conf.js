@@ -64,6 +64,8 @@ exports.config = {
         'project': 'Sample WDIO test',
         'build': 'Sample WDIO test v1',
     }],
+    
+    host: 'hub.browserstack.com',
     //
     // ===================
     // Test Configurations
