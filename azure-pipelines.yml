@@ -22,7 +22,7 @@ steps:
 - script: ls ./node_modules/.bin | grep wdio
 - script: ./node_modules/.bin/wdio -v
 - script: npx wdio -v
-- script: npm run single
+- script: npm test
   displayName: 'Run a one-line script'
 - task: BrowserStackResults@0
 
