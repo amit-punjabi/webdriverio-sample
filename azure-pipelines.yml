@@ -10,6 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: PublishTestResults@2
 - task: BrowserStackResults@0
 - task: NodeTool@0
   inputs:
@@ -24,7 +25,6 @@ steps:
 - script: npx wdio -v
 - script: npm test
   displayName: 'Run a one-line script'
-- task: BrowserStackResults@0
 
 
 - script: |
