@@ -14,6 +14,7 @@ steps:
   inputs:
     versionSpec: '6.15.1'
     checkLatest: false
+
 - script: npm install
 - script: npm list | grep webdriver
 - script: npm test
