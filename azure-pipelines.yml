@@ -15,13 +15,8 @@ steps:
   inputs:
     versionSpec: '6.15.1'
     checkLatest: false
-- script: node -v
 - script: npm install
-- script: npm uninstall fibers
-- script: npm install fibers
-- script: ls ./node_modules/.bin | grep wdio
-- script: ./node_modules/.bin/wdio -v
-- script: npx wdio -v
+- script: npm list | grep webdriver
 - script: npm test
   displayName: 'Run a one-line script'
 - task: BrowserStackResults@0
