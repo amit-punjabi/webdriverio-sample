@@ -10,7 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: PublishTestResults@2
 - task: NodeTool@0
   inputs:
     versionSpec: '6.15.1'
@@ -19,8 +18,8 @@ steps:
 - script: npm list | grep webdriver
 - script: npm test
   displayName: 'Run a one-line script'
+- task: PublishTestResults@2
 - task: BrowserStackResults@0
-
 
 
 - script: |
